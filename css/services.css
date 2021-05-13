@@ -1,0 +1,409 @@
+ /* CSS reset */
+
+ *{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height:40px;
+}
+/* Navigation bar */
+
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    top:0px;
+    width:100%;
+    background-color: black;
+    opacity:0.8;
+}
+
+/* Navigation bar logo and images */
+
+#logo{
+    display:inline-block;
+    margin:10px 25px;
+    top:0px;
+}
+#logo img{
+    height:50px;
+    width:50px;
+    margin:3px 6px;
+}
+/* shop name */
+
+#navbar .shopname h3{
+    color:brown;
+    font-style: italic;
+    font-weight: 700;
+}
+.right{
+    display:block;
+    position:relative;
+    left:1150px;
+    font-size:30px; 
+    cursor:pointer; 
+    color:white;
+}
+
+/* Menu button */
+
+.overlay
+{
+height:0%;
+width:100%;
+position:fixed;
+z-index:1;
+top:0;
+left:0px;
+background-color:rgb(0,0,0);
+background-color:rgba(0,0,0,0.9);
+overflow-y:hidden;
+transition:0.5s;
+}
+.overlay-content
+{
+position:relative;
+top:25%;
+width:100%;
+text-align:center;
+margin-top:30px;
+}
+.overlay a
+{
+padding:8px;
+text-decoration:none;
+font-size:36px;
+color:#818181;
+display:block;
+/* position:relative;
+left:200px; */
+transition:0.3s;
+}
+.overlay a:hover,.overlay a:focus
+{
+color:#f1f1f1;
+}
+.overlay .closebtn
+{
+position:absolute;
+top:20px;
+right:45px;
+font-size:60px;
+}
+@media screen and (max-height:450px)
+{
+.overlay{overflow-y:auto;}
+.overlay a{font-size:20px}
+.overlay .closebtn
+{
+font-size:40px;
+top:15px;
+right:35px;
+}
+}
+#navbar .active{
+    color:white;
+}
+
+/* Home section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:400px;
+    justify-content:center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg6.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    /* opacity:0.5; */
+}
+#home h1{
+    display:block;
+    position:relative;
+    top:100px;
+    right:370px;
+    font-size: 80px;
+    color:white;
+    font-weight:700;
+}
+
+/* service-container */
+
+#service-container{
+    background-color:#f2f2f2;
+    height:2258px;
+    color:black;
+    display:inline-block;
+    position:relative;
+    top:175px;
+}
+
+#service-container h1{
+    display:inline-block;
+    position: relative;
+    font-weight: 700;
+    top:60px;
+    left:680px;
+    margin:20px auto;
+}
+#service-container p{
+    display:inline-block;
+    position: relative;
+    width:30%;
+    color:grey;
+    font-weight: 700;
+    top:140px;
+    left:430px;
+}
+#service-container .box{
+    background:url('../img 16.jpg') no-repeat center center/cover;
+    display:inline-block;
+    position:relative;
+    height:500px;
+    width:1000px;
+    left:260px;
+    top:190px;
+}
+#service-container .box h2{
+    display:inline-block;
+    position:relative;
+    color:black;
+    left:50px;
+    top:30px;
+}
+#service-container .box p{
+    display:block;
+    position:relative;
+    color:white;
+    left:50px;;
+    top:50px;
+}
+#service-container .box button{
+    display:block;
+    position:relative;
+    left:50px;
+    top:70px;
+}
+#service-container .box1{
+    background:url('../img 17.jpg') no-repeat center center/cover;
+    display:inline-block;
+    position:relative;
+    height:500px;
+    width:1000px;
+    left:260px;
+    top:190px;
+}
+#service-container .box1 h2{
+    display:inline-block;
+    position:relative;
+    left:500px;
+    top:30px;
+}
+#service-container .box1 p{
+    display:block;
+    position:relative;
+    color:grey;
+    left:500px;;
+    top:50px;
+}
+#service-container .box1 button{
+    display:block;
+    position:relative;
+    left:500px;
+    top:70px;
+}
+#service-container .box2{
+    background:url('../img18.jpg') no-repeat center center/cover;
+    display:inline-block;
+    position:relative;
+    height:500px;
+    width:1000px;
+    left:260px;
+    top:190px;
+}
+#service-container .box2 h2{
+    display:inline-block;
+    position:relative;
+    left:50px;
+    top:30px;
+}
+#service-container .box2 p{
+    display:block;
+    position:relative;
+    color:white;
+    left:50px;
+    top:50px;
+}
+#service-container .box2 button{
+    display:block;
+    position:relative;
+    left:50px;
+    top:70px;
+}
+#service-container .box3{
+    background:url('../img 19.jpg') no-repeat center center/cover;
+    display:inline-block;
+    position:relative;
+    height:500px;
+    width:1000px;
+    left:260px;
+    top:190px;
+}
+#service-container .box3 h2{
+    display:inline-block;
+    position:relative;
+    left:500px;
+    top:30px;
+}
+#service-container .box3 p{
+    display:block;
+    position:relative;
+    color:grey;
+    left:500px;;
+    top:50px;
+}
+#service-container .box3 button{
+    display:block;
+    position:relative;
+    left:500px;
+    top:70px;
+}
+
+/* service-contaiener2 */
+
+#service-container2{
+    background-color:#f2f2f2;
+    height:600px;
+    color:black;
+    display:inline-block;
+    position:relative;
+    width:100%;
+}
+#service-container2 h1{
+    display:inline-block;
+    position: relative;
+    font-weight: 700;
+    top:60px;
+    left:680px;
+    margin:20px auto;
+}
+#service-container2 p{
+    display:inline-block;
+    position: relative;
+    width:30%;
+    color:grey;
+    font-weight: 700;
+    top:140px;
+    left:430px;
+}
+#service-container2 .servicebox{
+    display:flex;
+    padding:10px 20px;
+    margin:10px 15px;
+}
+#service-container2 .box{
+    display:block;
+    position:relative;
+    top:120px;
+    left:120px;
+    background-color:#f2f2f2;
+    padding:30px 40px;
+    margin:10px 15px;
+    height:300px;
+    width:200px;
+}
+#service-container2 div .box:hover{
+    background-color: white;
+    height:300px;
+    cursor: pointer;
+}
+#service-container2 .servicebox h3{
+    display:inline-block;
+    position:relative;
+    top:10px;
+    left:30px;
+}
+#service-container2 .box img{
+    display:block;
+    position:relative;
+    left:50px;
+}
+#service-container2 .box button{
+    display:block;
+    position:relative;
+    top:60px;
+    left:30px;
+}
+
+/* Footer section */
+
+footer{
+    background-color: black;
+    color:grey;
+    height:465px; 
+}
+#foot{
+    display:flex;
+    padding:12px 20px;
+}
+#foot .box4{
+    display:block;
+    position:reative;
+    width:30%;
+}
+#foot .box4 ul li{
+    list-style: none;
+    text-decoration:none;
+}
+#foot .box5 h1{
+    display:inline-block;
+    position:relative;
+    left:210px;
+}
+#foot .box5 p{
+    display:inline-block;
+    position:relative;
+    left:210px;
+    color:grey;
+    width:36%;
+}
+#foot .box6 div a{
+    display:inline-block;
+    position:relative;
+    left:-5px;
+    padding:12px 20px;
+}
+div.copyright{
+    display:inline-block;
+    position:relative;
+    top:270px;
+    left:500px;
+}
+
+/* Utility classes */
+
+.btn{
+    padding:14px 28px;
+    border:2px solid white;
+    background-color: #56ccf2;
+    color:white;
+    font-weight: 700;
+    margin:5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#2D9CDB;
+}

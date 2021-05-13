@@ -1,0 +1,201 @@
+ /* CSS reset */
+
+ *{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height:40px;
+}
+/* Navigation bar */
+
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    top:0px;
+    width:100%;
+    background-color: black;
+    opacity:0.8;
+}
+
+/* Navigation bar logo and images */
+
+#logo{
+    display:inline-block;
+    margin:10px 25px;
+    top:0px;
+}
+#logo img{
+    height:50px;
+    width:50px;
+    margin:3px 6px;
+}
+/* shop name */
+
+#navbar .shopname h3{
+    color:brown;
+    font-style: italic;
+    font-weight: 700;
+}
+.right{
+    display:block;
+    position:relative;
+    left:1150px;
+    font-size:30px; 
+    cursor:pointer; 
+    color:white;
+}
+
+/* Menu button */
+
+.overlay
+{
+height:0%;
+width:100%;
+position:fixed;
+z-index:1;
+top:0;
+left:0px;
+background-color:rgb(0,0,0);
+background-color:rgba(0,0,0,0.9);
+overflow-y:hidden;
+transition:0.5s;
+}
+.overlay-content
+{
+position:relative;
+top:25%;
+width:100%;
+text-align:center;
+margin-top:30px;
+}
+.overlay a
+{
+padding:8px;
+text-decoration:none;
+font-size:36px;
+color:#818181;
+display:block;
+/* position:relative;
+left:200px; */
+transition:0.3s;
+}
+.overlay a:hover,.overlay a:focus
+{
+color:#f1f1f1;
+}
+.overlay .closebtn
+{
+position:absolute;
+top:20px;
+right:45px;
+font-size:60px;
+}
+@media screen and (max-height:450px)
+{
+.overlay{overflow-y:auto;}
+.overlay a{font-size:20px}
+.overlay .closebtn
+{
+font-size:40px;
+top:15px;
+right:35px;
+}
+}
+#navbar .active{
+    color:white;
+}
+
+/* Home section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:400px;
+    justify-content:center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg6.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    /* opacity:0.5; */
+}
+#home h1{
+    display:block;
+    position:relative;
+    top:100px;
+    right:370px;
+    font-size: 80px;
+    color:white;
+    font-weight:700;
+}
+
+/* Location */
+
+#location{
+    display:block;
+    position:relative;
+    top:180px;
+    height:500px;
+}
+#location .box img{
+    height:100%;
+    width:100%;
+}
+
+/* Footer Section */
+
+footer{
+    background-color: black;
+    color:grey;
+    display:block;
+    position: relative;
+    top:380px;
+    height:465px; 
+}
+#foot{
+    display:flex;
+    padding:12px 20px;
+}
+#foot .box4{
+    display:block;
+    position:reative;
+    width:30%;
+}
+#foot .box4 ul li{
+    list-style: none;
+    text-decoration:none;
+}
+#foot .box5 h1{
+    display:inline-block;
+    position:relative;
+    left:210px;
+}
+#foot .box5 p{
+    display:inline-block;
+    position:relative;
+    left:210px;
+    color:grey;
+    width:36%;
+}
+#foot .box6 div a{
+    display:inline-block;
+    position:relative;
+    left:-5px;
+    padding:12px 20px;
+}
+div.copyright{
+    display:inline-block;
+    position:relative;
+    top:270px;
+    left:500px;
+}

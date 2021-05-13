@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="report.css">
+    <title>Report FIR</title>
+</head>
+
+<body class="background">
+    <h1>Report FIR</h1>
+    <div class="col">
+        <ul class="navlist ">
+            <li><a href="#personaldetail">Personal Detail</a></li>
+            <li><a href="crimeoccurence">Crime Occurence</a></li>
+            <li><a href="missingreport">Missing Report</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+
+    <section class="detail">
+        <h2 class="text-center" id="personaldetail">Personal Detail</h2>
+        <div class="form">
+            <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            <label for="name">Contact no.:</label><input type="text" name="phone" id="phone" placeholder="Enter Your Phone" required>
+            <label for="name">Email:</label><input type="text" name="email" id="email" placeholder="Enter Your Email" required>
+            <label for="name">Address:</label><input type="text" name="address" id="address" placeholder="Enter Your address" required>
+            <label for="cars">State:
+            <select id="state" name="state" required>
+    <option value="andhrapradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chhattisgarh ">Chhattisgarh</option>
+    <option value="goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Odisha">Odisha</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="West Bengal">West Bengal</option>
+  </select>
+</label>
+            <!-- <textarea name="text" id="Suggest" cols="80" rows="10" placeholder="Any Suggestions"></textarea> -->
+            <button class="btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <br><br> <br>
+
+    <section class="detail">
+        <h2 class="text-center" id="crimeoccurence">Crime Occurence</h2>
+        <div class="form">
+            <label for="name">Place of Occurence:</label><input type="text" name="name" id="name" placeholder="Eg. Mumbai">
+            <label for="name">District:</label><input type="text" name="district" id="district" placeholder="Select District">
+            <label for="name">Police Station:</label><input type="text" name="policestation" id="policestation" placeholder="Eg. Kasturba Police Station">
+            <label for="name">From Date:</label><input type="text" name="date" id="date" placeholder="start dd/mm/yyyy">
+            <label for="name">From Time:</label><input type="text" name="time" id="time" placeholder="Enter Start hr:min:sec">
+            <label for="name">To Date:</label><input type="text" name="date" id="date" placeholder="end dd/mm/yyyy">
+            <label for="name">To Time:</label><input type="text" name="time" id="time" placeholder="Enter End hr:min:sec">
+            <!-- <label for="cars">State:
+            <select id="state" name="state">
+    
+  </select>
+</label> -->
+            <textarea name="text" id="Suggest" cols="80" rows="10" placeholder="Any Suggestions"></textarea>
+            <button class="btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <br><br> <br>
+
+    <section class="detail">
+        <h2 class="text-center" id="missingreport">Missing Report</h2>
+        <div class="form">
+            <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <label for="name">Contact no.:</label><input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <label for="name">Addhar No.:</label><input type="text" name="addhar" id="addhar" placeholder="Enter Your Addhar No.">
+            <label for="name">Address:</label><input type="text" name="address" id="address" placeholder="Enter Your address">
+            <label for="cars">Missing:
+            <select id="missing" name="missing">
+                <option value="Others">Others</option>
+                <option value="jewellery">Jewellery</option>
+                <option value="automobile">Auto Mobile</option>
+                <option value="Phone">Phone</option>
+                <option value="Bihar">Electronic Accessories</option>
+                <option value="Person ">Person</option>
+                <option value="wallet">Wallet</option>
+                <option value="Others">Others</option>
+    
+  </select>
+  <label for="name">Others:</label><input type="text" name="others" id="others" placeholder="Others">
+            </label>
+            <!-- <textarea name="text" id="Suggest" cols="80" rows="10" placeholder="Any Suggestions"></textarea> -->
+            <button class="btn-dark">Submit</button>
+        </div>
+    </section>
+
+</body>
+
+</html>

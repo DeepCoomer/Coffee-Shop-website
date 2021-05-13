@@ -1,0 +1,88 @@
+/* Css reset */
+body{
+    color:white;
+    margin:10px;
+    padding:0px;
+    background:url('../bg9.jpg') no-repeat;
+    background-size: 100%;
+}
+.left{
+   /* border:2px solid red; */
+   display:inline-block;
+   position:absolute;
+   left:34px;
+   top:20px;
+}
+.left img{
+    width:60px;
+    /* filter:invert(100%); */
+}
+.left div{
+    text-align:center;
+    line-height:0px;
+}
+.mid{
+   display:block;
+   width:36%;
+   /* border:2px solid green; */
+   margin:20px auto;
+}
+.right{
+    position:absolute;
+    right:34px;
+    top:20px;
+    display:inline-block; 
+    /* border:2px solid yellow; */
+}
+.navbar{
+    display:inline-block;
+}
+.navbar li{
+    display:inline-block;
+    font-size:18px;
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding:34px 23px;
+}
+.navbar li a:hover , .navbar li a.active{
+    text-decoration:underline;
+    color:grey;
+}
+.btn{
+    padding:14px 28px;
+    border:2px solid white;
+    background-color: #56ccf2;
+    color:white;
+    font-weight: 700;
+    margin:5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+background-color:#2D9CDB;
+}
+.description p{
+    display:block;
+    position:relative;
+    top:160px;
+    margin:2px auto;
+    width:30%;
+}
+.mainbtn{
+    display:block;
+    position:relative;
+    top:200px;
+    margin:0px auto;
+    width:30%;
+}
+footer{
+color:grey;
+}
+div.copyright{
+display:inline-block;
+position:relative;
+top:540px;
+left:500px;
+}

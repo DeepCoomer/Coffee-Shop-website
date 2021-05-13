@@ -1,0 +1,472 @@
+/* CSS reset */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height:40px;
+}
+/* Navigation bar */
+
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    top:0px;
+    width:100%;
+    background-color: black;
+    opacity:0.8;
+}
+
+/* Navigation bar logo and images */
+
+#logo{
+    display:inline-block;
+    margin:10px 25px;
+    top:0px;
+}
+#logo img{
+    height:50px;
+    width:50px;
+    margin:3px 6px;
+}
+/* shop name */
+
+#navbar .shopname h3{
+    color:brown;
+    font-style: italic;
+    font-weight: 700;
+}
+.right{
+    display:block;
+    position:relative;
+    left:1150px;
+    font-size:30px; 
+    cursor:pointer; 
+    color:white;
+}
+
+/* Menu button */
+
+.overlay
+{
+height:0%;
+width:100%;
+position:fixed;
+z-index:1;
+top:0;
+left:0px;
+background-color:rgb(0,0,0);
+background-color:rgba(0,0,0,0.9);
+overflow-y:hidden;
+transition:0.5s;
+}
+.overlay-content
+{
+position:relative;
+top:25%;
+width:100%;
+text-align:center;
+margin-top:30px;
+}
+.overlay a
+{
+padding:8px;
+text-decoration:none;
+font-size:36px;
+color:#818181;
+display:block;
+/* position:relative;
+left:200px; */
+transition:0.3s;
+}
+.overlay a:hover,.overlay a:focus
+{
+color:#f1f1f1;
+}
+.overlay .closebtn
+{
+position:absolute;
+top:20px;
+right:45px;
+font-size:60px;
+}
+@media screen and (max-height:450px)
+{
+.overlay{overflow-y:auto;}
+.overlay a{font-size:20px}
+.overlay .closebtn
+{
+font-size:40px;
+top:15px;
+right:35px;
+}
+}
+#navbar .active{
+    color:white;
+}
+
+/* Home section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:400px;
+    justify-content:center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg6.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    /* opacity:0.5; */
+}
+#home h1{
+    display:block;
+    position:relative;
+    top:100px;
+    right:370px;
+    font-size: 80px;
+    color:white;
+    font-weight:700;
+}
+
+/* container */
+
+#services{
+    display:flex;
+    background-color:rgb(194, 140, 70);
+    height:400px;
+    z-index: -1;
+}
+#services .box{
+    padding:10px 20px;
+    display:block;
+    position: relative;
+    top:50px;
+}
+#services .box img{
+    height:340px;
+    width:280px;
+}
+#services .box h1,p{
+    color:white;
+}
+
+/* Testimonials */
+
+ #testimonials .intro h2{
+    display:inline-block;
+    position:relative;
+    /* margin:20px auto; */
+    left:600px;
+} 
+ #testimonials .intro p{
+    display:inline-block;
+    position:relative;
+    left:300px;
+    top:50px;
+    width:30%;
+    color:black;
+}
+ #testimonials .box{
+    display:inline-block;
+    position:relative;
+    background-color: #f2f2f2;
+    width:50%;
+    margin:30px auto;
+    top:80px;
+    left:320px;
+    height:750px;
+}
+#testimonials .box img{
+    display:block;
+    position:relative;
+    left:150px;
+    top:50px;
+}
+#testimonials .box h3{
+    display:inline-block;
+    position:relative;
+    left:230px;
+    bottom: 120px;
+}
+#testimonials .box p{
+    display:inline-block;
+    position:relative;
+    top:0px;
+    width:50%;
+    left:30px;
+    color:black;
+}
+#testimonials div a{
+    display:block;
+    position:relative;
+    float:left;
+    left:325px;
+    padding:7px 12px;
+}
+#testimonials span a .fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+#testimonials a{
+    display:inline-block;
+    position:relative;
+    top:100px;
+}
+#testimonials span a .fa:hover{
+    opacity:0.7;
+}
+#testimonials span a .fa-facebook {
+    background:#3B5998;
+    color: white;
+}
+#testimonials span a .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+#testimonials span a .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+#testimonials span{
+    display:inline-block;
+    position:relative;
+    left:240px;
+    bottom:120px;
+}
+#testimonials .checked {
+  color: orange;
+}
+#testimonials button{
+    display:inline-block;
+    position:relative;
+    top:80px;
+    left:620px;
+}
+#testimonials hr{
+    color:grey;
+    font-weight: 1;
+}
+#testimonials .review a button{
+    display:inline-block;
+    position:relative;
+    top:10px;
+}
+
+/* facts container */
+
+#facts-container{
+    background:url('../bg7.jpg') no-repeat center center/cover;
+    height:1200px;
+    opacity:0.8;
+}
+#facts-container h1{
+    display:inline-block;
+    position:relative;
+    left:620px;
+    top:60px;
+    color:white;
+    font-weight: 700;
+}
+#facts-container p{
+    display:inline-block;
+    position: relative;
+    top:140px;
+    width:30%;
+    left:300px;
+    font-weight: 700;
+}
+#facts-container .facts{
+    display:flex;
+    margin:6px 10px;
+}
+#facts-container .box9{
+    display:inline-block;
+    position:relative;
+    top:250px;
+    /* padding:10px 20px; */
+    margin:25px 30px;
+    height:605px;
+    width:440px;
+    background-color: white;
+}
+#facts-container .box9 img{
+    height:420px;
+    width:440px;
+    padding:0px;
+    margin:0px;
+}
+#facts-container .box9 h3{
+    display:inline-block;
+    position:relative;
+    left:50px;
+    top:20px;
+}
+#facts-container .box9 p{
+    display:inline-block;
+    position:relative;
+    left:100px;
+    width:55%;
+    color:black;
+    top:40px;
+}
+#facts-container .box9 a{
+    display:inline-block;
+    position:relative;
+    left:150px;
+    padding:5px 9px;
+    top:40px;
+}
+#facts-container div .bn{
+    display:inline-block;
+    position:absolute;
+    right:900px;
+    top:1000px;
+}
+
+/* faq */
+#faq .intro h2{
+    display:inline-block;
+    position:relative;
+    left:600px;
+    top:40px;
+} 
+#faq .intro p{
+    display:inline-block;
+    position:relative;
+    left:360px;
+    top:110px;
+    width:30%;
+    color:black; 
+}
+#faq .box10{
+    display:inline-block;
+    position:relative;
+    background-color: #f2f2f2;
+    width:50%;
+    margin:30px auto;
+    top:140px;
+    left:320px;
+    height:700px;
+}
+#faq .box10 h3{
+    display:inline-block;
+    position:relative;
+    left:230px;
+    top:40px;
+}
+#faq .box10 p{
+    display:block;
+    position:relative;
+    left:170px;
+    width:50%;
+    color:black;
+    top:65px;
+}
+#faq button{
+    display:inline-block;
+    position:relative;
+    top:120px;
+    left:620px;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color:grey;
+    height:465px;
+}
+#foot{
+    display:flex;
+    padding:12px 20px;
+}
+#foot .box4{
+    display:block;
+    position:reative;
+    width:30%;
+}
+#foot .box4 ul li{
+    list-style: none;
+    text-decoration:none;
+}
+#foot .box5 h1{
+    display:inline-block;
+    position:relative;
+    left:210px;
+}
+#foot .box5 p{
+    display:inline-block;
+    position:relative;
+    left:210px;
+    color:grey;
+    width:36%;
+}
+#foot .box6 div a{
+    display:inline-block;
+    position:relative;
+    left:-5px;
+    padding:12px 20px;
+}
+div.copyright{
+    display:inline-block;
+    position:relative;
+    top:270px;
+    left:500px;
+}
+
+/* Utillity classes */
+
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size:2.3rem;
+    padding:12px;
+}
+.btn{
+    padding:14px 28px;
+    border:2px solid white;
+    background-color: #56ccf2;
+    color:white;
+    font-weight: 700;
+    margin:5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    color:black;
+    background-color: #2D9CDB;
+}
+#btn1{
+    padding:14px 28px;
+    background-color:#56ccf2;
+    color:white;
+    font-weight: 700;
+    margin:5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn1:hover{
+    color:black;
+    background-color:#2D9CDB;
+}
+.center{
+    text-align:center;
+}
